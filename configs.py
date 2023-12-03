@@ -7,7 +7,7 @@ class Config(object):
 	API_ID = int(os.environ.get("API_ID", "20053544"))
 	API_HASH = os.environ.get("API_HASH", "f26c4d28081c11e0c48707143f7bb5b1")
 	BOT_TOKEN = os.environ.get("BOT_TOKEN", "6537169610:AAE-I-l4TME7YRofUuzqrBhO23Etd9knuO0")
-	BOT_USERNAME = os.environ.get("BOT_USERNAME", "http://t.me/Movie_Time_HD_1_Files_Store_Bot")
+	BOT_USERNAME = os.environ.get("BOT_USERNAME", "Movie_Time_HD_1_Files_Store_Bot")
 	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1001929295159"))
 	BOT_OWNER = int(os.environ.get("BOT_OWNER", "1439022100"))
 	DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://MovieTimeHD1:MovieTimeHD1@cluster0.trfqzij.mongodb.net/")
@@ -16,7 +16,7 @@ class Config(object):
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
-	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
+	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "0").split()))
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
 	ABOUT_BOT_TEXT = f"""
 This is Permanent Files Store Bot!
