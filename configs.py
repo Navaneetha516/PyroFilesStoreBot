@@ -4,14 +4,14 @@ import os
 
 
 class Config(object):
-	API_ID = int(os.environ.get("API_ID", "0"))
-	API_HASH = os.environ.get("API_HASH")
-	BOT_TOKEN = os.environ.get("BOT_TOKEN")
-	BOT_USERNAME = os.environ.get("BOT_USERNAME")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-100"))
-	BOT_OWNER = int(os.environ.get("BOT_OWNER", "1445283714"))
-	DATABASE_URL = os.environ.get("DATABASE_URL")
-	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
+	API_ID = int(os.environ.get("API_ID", "20053544"))
+	API_HASH = os.environ.get("API_HASH", "f26c4d28081c11e0c48707143f7bb5b1")
+	BOT_TOKEN = os.environ.get("BOT_TOKEN", "6537169610:AAE-I-l4TME7YRofUuzqrBhO23Etd9knuO0")
+	BOT_USERNAME = os.environ.get("BOT_USERNAME", "http://t.me/Movie_Time_HD_1_Files_Store_Bot")
+	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1001929295159"))
+	BOT_OWNER = int(os.environ.get("BOT_OWNER", "1439022100"))
+	DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://MovieTimeHD1:MovieTimeHD1@cluster0.trfqzij.mongodb.net/")
+	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1001688675040")
 	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", None)
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
